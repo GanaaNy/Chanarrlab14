@@ -2,10 +2,12 @@ name: CI Процесс
 on:
   push:
     branches:
+      - main
       - develop
       - release/*
   pull_request:
     branches:
+      - main
       - develop
       - release/*
 jobs:
@@ -18,6 +20,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          cache: 'maven'
       - name: Checkstyle Шалгах
         run: mvn checkstyle:check
       - name: JUnit Тест ба JaCoCo Coverage Шалгах
