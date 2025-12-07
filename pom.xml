@@ -80,6 +80,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
                     </execution>
                     <execution>
                         <id>check</id>
+                        <phase>verify</phase>
                         <goals>
                             <goal>check</goal>
                         </goals>
