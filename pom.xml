@@ -87,7 +87,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
                         <configuration>
                             <rules>
                                 <rule>
-                                    <element>BRANCH</element>
+                                    <element>BUNDLE</element>
                                     <limits>
                                         <limit>
                                             <counter>BRANCH</counter>
